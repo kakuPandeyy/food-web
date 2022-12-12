@@ -142,6 +142,10 @@ color: gainsboro;
 font-weight: 500;
 }
 
+/* media */
+
+
+
 @media(max-width: 1025px){
   .rotates{
     transform: rotate(0deg);
@@ -149,38 +153,47 @@ font-weight: 500;
   .big-container{  
     text-align: center;
   position: static;
-  height: 130vh;
+  height: 70vh;
   }
 .logo{
   display: none;
 }
   .download{
     color: white;
-  padding: 15px 32px;
+  padding: 25px 62px;
+  border-radius: 20p20;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin-top: 5%;
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+ 
   }
 
  #feature{
   padding: 10%;
  }
  #feature:h2{
- font-size: 5rem;
+ font-size: px;
  font-weight: 600;
  }
  #feature:p{
-  font-size: 3rem;
+  font-size: 35rem;
+  font-weight: 300;
  }
 
 }
 #prices{
   padding: 7% 15%;
 }
+#prices .card-header{
+  font-size: 1.6rem;
+}
 #prices ul{
   margin-top: 40px;
+  font-size: 1rem;
 }
 #prices .cardss{
   margin: 5%;
@@ -196,7 +209,7 @@ font-weight: 500;
 }
 #cta .download{
   color: white;
-  padding: 15px 32px;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -221,19 +234,4 @@ font-weight: 500;
 .signup:hover{
   text-decoration: none;
   color:#f6f2f2;
-}
-@media(max-width: 360px){
-  body{
-    background-size: cover;
-background-position: center;
-  }
-  .big-container{
-    height: 170vh;
-    width: 400px;
-    text-align: center;
-  }
-  .heading{
-    text-align: center;
-margin-left: 2px;
-  }
 }
