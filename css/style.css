@@ -1,0 +1,239 @@
+.big-container{
+  height: 100vh ;
+  background-image: url(img.jpg);
+background-size: cover;
+background-position: center;
+}
+.navbar-brand{
+  padding: 10px 25px;
+ color: #fff;
+}
+.navbar{
+  padding: 0 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-item{
+  font-weight: 300;
+  padding: 0 18px;
+
+}
+.semi-container{
+  margin-top: 200px;
+}
+
+h1{
+  color: #f6f2f2;
+  font-weight: 900;
+  font-size: 1in;
+  font-family: open sans;
+  line-height: 1.3;
+  padding-left: 7.6px;
+  margin-left: 50px;
+}
+.rotate{
+  animation: mymovie 3s linear 50ms infinite alternate backwards;
+  transform: rotate3d(0,1,1,22deg); 
+  
+ }
+ @keyframes mymovie {
+   0%{ transform: rotate3d(0,1,1,22deg); }
+   100%{ transform: rotate3d(0,1,1,10deg); }
+ }
+
+.download {
+  margin: 30px 40px;
+  padding: 0.6em 2.5em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.download:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.download:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.download:hover{
+  color: #00ffd5;
+  }
+
+.download .icon{
+  margin-right: 10px;
+}
+
+  #feature{
+    text-align: center;
+    background: #FF8C8C;
+    /* background: linear-gradient(20deg,#FFC3C3 40%,#FF8C8C 80%,#FF5D5D 90%); */
+    margin-top: 100px;
+  padding: 3%;  
+  }
+#feature .icon{
+  height: 5rem;
+  width: 5rem;
+  color: #fff;
+  margin-top: 100px;
+  padding: auto;
+}
+#feature h2{
+  padding: 0.4em;
+  size: 3rem;
+  font-weight: 800;
+  color: white;
+}
+#feature p{
+color: gainsboro;
+font-weight: 500;
+}
+
+@media(max-width: 1025px){
+  .rotates{
+    transform: rotate(0deg);
+  }
+  .big-container{  
+    text-align: center;
+  position: static;
+  height: 130vh;
+  }
+.logo{
+  display: none;
+}
+  .download{
+    color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5%;
+  }
+
+ #feature{
+  padding: 10%;
+ }
+ #feature:h2{
+ font-size: 5rem;
+ font-weight: 600;
+ }
+ #feature:p{
+  font-size: 3rem;
+ }
+
+}
+#prices{
+  padding: 7% 15%;
+}
+#prices ul{
+  margin-top: 40px;
+}
+#prices .cardss{
+  margin: 5%;
+}
+#cta{
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 5%;
+  line-height: 2;
+}
+#cta .download{
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5%;
+}
+#cta .download:hover{
+  color: #00ffd5;
+}
+#contact{
+  text-align: center;
+}
+#contact .icon{
+
+  padding: 5%;
+
+}
+.signup{
+  text-decoration: none;
+  color: #111;
+}
+.signup:hover{
+  text-decoration: none;
+  color:#f6f2f2;
+}
+@media(max-width: 360px){
+  body{
+    background-size: cover;
+background-position: center;
+  }
+  .big-container{
+    height: 170vh;
+    width: 400px;
+    text-align: center;
+  }
+  .heading{
+    text-align: center;
+margin-left: 2px;
+  }
+}
